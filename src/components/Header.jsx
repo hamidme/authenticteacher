@@ -1,13 +1,8 @@
 import React, { useState } from "react";
-import {
-  HeaderWrapper,
-  Logo,
-  Nav,
-  NavMobile,
-  OpenMobileLinks,
-} from "./styles/Header.style";
+import { Logo, Nav, NavMobile, OpenMobileLinks } from "./styles/Header.style";
 import { RegisterButton } from "./styles/Button.style";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { HeaderWrapper } from "./styles/Wrapper.style";
 
 const Header = () => {
   const [showNavMobile, setShowNavMobile] = useState(false);
@@ -15,7 +10,6 @@ const Header = () => {
   const HandleShowNavMobile = () => {
     setShowNavMobile(!showNavMobile);
   };
-  console.log(showNavMobile);
   return (
     <>
       <HeaderWrapper>
@@ -38,6 +32,7 @@ const Header = () => {
           <RegisterButton>Register</RegisterButton>
         </Nav>
       </HeaderWrapper>
+
       {showNavMobile && (
         <NavMobile>
           <span>Hire Teachers</span>

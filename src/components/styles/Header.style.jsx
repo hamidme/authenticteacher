@@ -1,15 +1,5 @@
 import { styled } from "styled-components";
 
-export const HeaderWrapper = styled.header`
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 30px 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #000000c1;
-`;
-
 export const Logo = styled.div`
   display: flex;
   align-items: center;
@@ -20,7 +10,7 @@ export const Logo = styled.div`
 
   span {
     color: #f8067b;
-    margin-left: 20px;
+    /* margin-left: 20px; */
   }
 `;
 
@@ -28,7 +18,7 @@ export const OpenMobileLinks = styled.button`
   background-color: transparent;
   border-color: transparent;
   padding-top: 6px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   cursor: pointer;
 
   @media screen and (min-width: 1150px) {
